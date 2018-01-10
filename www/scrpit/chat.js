@@ -15,7 +15,6 @@ HiChat.prototype = {
         //建立到服务器的socket连接
         // this.socket = io.connect("http://58.87.91.63:8080/");
         this.socket = io.connect("localhost:8080/");
-
         console.log("连接创建完成")
         //监听socket的connect事件，此事件表示连接已经建立
         this.socket.on('connect', function() {
